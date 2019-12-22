@@ -432,7 +432,7 @@ bool FLuaContext::TryToBindLua(UObjectBaseUtility *Object)
 /**
  * Callback for FWorldDelegates::OnWorldTickStart
  */
-void FLuaContext::OnWorldTickStart(ELevelTick TickType, float DeltaTime)
+void FLuaContext::OnWorldTickStart(UWorld* World, ELevelTick TickType, float DeltaTime)
 {
     if (!Manager)
     {
